@@ -20,6 +20,7 @@ main {
   text-align: center;
   margin-top: 100px;
 }
+
 /* ==================
     Nave bar styles
 ================== */
@@ -49,10 +50,11 @@ ul li {
 ul li a {
   text-decoration: none;
   color: white;
-  padding: 10px;
+  padding: 20px;
+  margin: 0 5px;
 }
 ul li a:hover {
-  text-decoration: underline;
+  background-color: gray;
 }
 
 /* ===================
@@ -87,9 +89,10 @@ banner styles
   width: 90%;
   border-radius: 50%;
 }
+
 .banner img:hover {
   transform: scale(1.5) rotate(360deg);
-  transition: 1s ease-in-out;
+  transition: 2s all ease-in-out;
 }
 .brands {
   padding: 0;
@@ -100,6 +103,7 @@ banner styles
   width: 100px;
   margin: 10px;
 }
+
 /* ===================
 products styles
 ====================== */
@@ -121,16 +125,24 @@ products styles
 
 .product_hover {
   position: absolute;
+  z-index: 1;
   top: 100px;
   width: 200px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
   color: white;
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
 }
-.product img:hover ~ .product_hover {
-  display: block;
+.product_image:hover .product_hover {
+  /* display: block; */
+  opacity: 1;
 }
+
+/* ===================
+Previous next styles
+====================== */
 .more {
   display: flex;
   justify-content: space-between;
@@ -148,6 +160,7 @@ products styles
   color: black;
   font-weight: bolder;
 }
+
 /* ===================
 Contact us styles
 ====================== */
@@ -173,6 +186,7 @@ form textarea {
   justify-content: space-between;
   align-items: center;
 }
+
 /* ===================
 footer styles
 ====================== */
@@ -206,8 +220,17 @@ Media Queries
     position: absolute;
     top: 40px;
     left: 0;
+    width: 50%;
     display: none;
   }
+
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    top: 50px;
+  }
+
   #click:checked ~ .menu > ul {
     display: block;
   }
