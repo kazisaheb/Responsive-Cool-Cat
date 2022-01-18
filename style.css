@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+/* ======================
+Common styles
+======================== */
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding: 5% 10%;
+}
+.fas,
+.fab {
+  cursor: pointer;
+  padding: 0 5px;
+}
+.text_center {
+  text-align: center;
+  margin-top: 100px;
+}
+/* ==================
+    Nave bar styles
+================== */
+nav {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+.logo {
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===================
+banner styles
+====================== */
+.texts p {
+  margin: 30px 0;
+}
+.banner,
+.extra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#button {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+#button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.banner img {
+  width: 90%;
+  border-radius: 50%;
+}
+.banner img:hover {
+  transform: scale(1.5) rotate(360deg);
+  transition: 1s ease-in-out;
+}
+.brands {
+  padding: 0;
+  display: flex;
+  overflow: scroll;
+}
+.brands img {
+  width: 100px;
+  margin: 10px;
+}
+/* ===================
+products styles
+====================== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+.product {
+  position: relative;
+  box-shadow: 0 0 10px 0 gray;
+  padding: 3%;
+  border-radius: 10px;
+}
+.product img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.product_hover {
+  position: absolute;
+  top: 100px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  color: white;
+  display: none;
+}
+.product img:hover ~ .product_hover {
+  display: block;
+}
+.more {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  color: orange;
+  margin: -25px -5px;
+  padding: 0;
+}
+.rating {
+  margin-left: 10px;
+  color: black;
+  font-weight: bolder;
+}
+/* ===================
+Contact us styles
+====================== */
+form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 3%;
+}
+
+form #half {
+  width: 70%;
+  padding: 10px;
+}
+
+form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.send,
+.send > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ===================
+footer styles
+====================== */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ================
+Dropdown styles
+================= */
+
+#click,
+#cross,
+#bars {
+  display: none;
+}
+
+/* ===============
+Media Queries
+=============== */
+@media only screen and (max-width: 688px) {
+  #bars {
+    display: block;
+  }
+  .menu > ul {
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+  }
+  #click:checked ~ .menu > ul {
+    display: block;
+  }
+  #click:checked ~ #bars {
+    display: none;
+  }
+  #click:checked ~ #cross {
+    display: flex;
+  }
+  .banner,
+  .extra {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner img {
+    margin-top: 100px;
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
