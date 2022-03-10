@@ -3,11 +3,32 @@
 /* ======================
 Common styles
 ======================== */
+*{
+  transition: all .2s ease-in-out;
+}
 body {
   font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* ==========Dark Mode============ */
+#colors{
+display: none;
+}
+#dark{
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 0 5px;
+}
+#colors:checked ~ .mainBody{
+  background-color: black;
+  color: white;
+}
+
+/* ========================== */
+
 main {
   padding: 5% 10%;
 }
@@ -92,7 +113,6 @@ banner styles
 
 .banner img:hover {
   transform: scale(1.5) rotate(360deg);
-  transition: 2s all ease-in-out;
 }
 .brands {
   padding: 0;
@@ -133,7 +153,6 @@ products styles
   color: white;
   /* display: none; */
   opacity: 0;
-  transition: 0.3s all ease-in-out;
 }
 .product_image:hover .product_hover {
   /* display: block; */
@@ -185,6 +204,7 @@ form textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -5px;
 }
 
 /* ===================
@@ -214,6 +234,12 @@ Media Queries
   #bars {
     display: block;
   }
+  .menu ul li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    top: 50px;
+  }
   .menu > ul {
     flex-direction: column;
     background-color: black;
@@ -224,14 +250,7 @@ Media Queries
     display: none;
   }
 
-  .menu ul li {
-    display: flex;
-    align-items: center;
-    height: 60px;
-    top: 50px;
-  }
-
-  #click:checked ~ .menu > ul {
+ #click:checked ~ .menu > ul {
     display: block;
   }
   #click:checked ~ #bars {

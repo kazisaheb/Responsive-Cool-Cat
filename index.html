@@ -1,289 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Cool Cat</title>
-    <link rel="shortcut icon" href="CoolCat.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/0e5dafa824.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
-      <!-- ====================
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Cool Cat</title>
+  <link rel="shortcut icon" href="CoolCat.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0e5dafa824.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- ====================
         nav bar
         ====================== -->
-      <nav>
-        <input type="checkbox" id="click" />
+    <nav>
+      <input type="checkbox" id="click" />
+      <label for="click" id="bars"><i class="fas fa-bars"></i></label>
+      <label for="click" id="cross"><i class="fas fa-times"></i></label>
+      <h1 class="logo">Cool Cat</h1>
 
-        <label for="click" id="bars"><i class="fas fa-bars"></i></label>
-        <label for="click" id="cross"><i class="fas fa-times"></i></label>
-        <h1 class="logo">Cool Cat</h1>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Log in</a></li>
-          </ul>
-          <span class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-cart-plus"></i
-          ></span>
-        </div>
-      </nav>
-    </header>
+      <label for="colors" id="dark">Dark</label>
 
-    <!-- ==================
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+        <span class="icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-cart-plus"></i></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================
       banner
       ==================== -->
-    <main>
-      <section class="banner">
-        <div class="texts">
-          <h1>Start journy</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cum
-            numquam ab accusantium aperiam sed. Enim, necessitatibus? Illum
-            ipsum, sequi culpa minus, reiciendis labore, tempora ad obcaecati
-            recusandae dolorum sit.
-          </p>
-          <a id="button" href="#">Book Now</a>
-        </div>
-        <img src="CoolCat.jpg" alt="" />
-      </section>
-      <h1 class="text_center">We're featured on:</h1>
+  <input type="checkbox" id="colors" />
 
-      <!-- ===================
+  <main class="mainBody">
+
+    <section class="banner">
+      <div class="texts">
+        <h1>Start journy</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cum
+          numquam ab accusantium aperiam sed. Enim, necessitatibus? Illum
+          ipsum, sequi culpa minus, reiciendis labore, tempora ad obcaecati
+          recusandae dolorum sit.
+        </p>
+        <a id="button" href="#">Book Now</a>
+      </div>
+      <img src="CoolCat.jpg" alt="" />
+    </section>
+    <h1 class="text_center">We're featured on:</h1>
+
+    <!-- ===================
         brands
         ==================== -->
-      <hr />
-      <section class="brands">
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-        <img src="CoolCat.jpg" alt="" />
-      </section>
-      <hr />
+    <hr />
+    <section class="brands">
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+      <img src="CoolCat.jpg" alt="" />
+    </section>
+    <hr />
 
-      <!-- ====================
+    <!-- ====================
         products
         ====================== -->
-      <h1 class="text_center">Top collections</h1>
+    <h1 class="text_center">Top collections</h1>
 
-      <section class="products">
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+    <section class="products">
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-        <div class="product">
-          <div class="product_image">
-            <img src="CoolCat.jpg" alt="" />
-            <div class="product_hover">
-              <h1>Hover Title</h1>
-              <p>Hover Texts</p>
-              <a id="button" href="#">Add to Cart</a>
-            </div>
-          </div>
-          <div class="product_info">
-            <h2>Product Name</h2>
-            <h3>Product Price</h3>
-            <span class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <p class="rating">4.8</p>
-            </span>
-            <p>Shifting info.</p>
-            <p>Aveliables</p>
-            <p>Product desc.</p>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product_image">
+          <img src="CoolCat.jpg" alt="" />
+          <div class="product_hover">
+            <h1>Hover Title</h1>
+            <p>Hover Texts</p>
+            <a id="button" href="#">Add to Cart</a>
           </div>
         </div>
-      </section>
+        <div class="product_info">
+          <h2>Product Name</h2>
+          <h3>Product Price</h3>
+          <span class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <p class="rating">4.8</p>
+          </span>
+          <p>Shifting info.</p>
+          <p>Aveliables</p>
+          <p>Product desc.</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- ======================
+    <!-- ======================
         more
         ======================= -->
-      <section class="more">
-        <a id="button" href=""><i class="fas fa-arrow-left"></i>Previous</a>
-        <a id="button" href="">Next<i class="fas fa-arrow-right"></i></a>
-      </section>
+    <section class="more">
+      <a id="button" href=""><i class="fas fa-arrow-left"></i>Previous</a>
+      <a id="button" href="">Next<i class="fas fa-arrow-right"></i></a>
+    </section>
 
-      <!-- =====================
+    <!-- =====================
         extra
         ====================== -->
-      <section class="extra">
-        <h1>Do some extra excersize to keep yourself fit all the time!</h1>
-        <form>
-          <h1>Contact us</h1>
-          <input id="half" type="text" placeholder="Your name" required />
-          <input id="half" type="email" placeholder="Email address" required />
-          <textarea
-            rows="15"
-            cols="60"
-            placeholder="Type message"
-            required
-          ></textarea>
-          <div class="send">
-            <span>
-              <input type="checkbox" id="check" />
-              <label for="check">Save my details</label>
-            </span>
-            <input id="button" type="submit" value="Send Message" />
-          </div>
-        </form>
-      </section>
-    </main>
+    <section class="extra">
+      <h1>Do some extra excersize to keep yourself fit all the time!</h1>
+      <form>
+        <h1>Contact us</h1>
+        <input id="half" type="text" placeholder="Your name" required />
+        <input id="half" type="email" placeholder="Email address" required />
+        <textarea rows="15" cols="60" placeholder="Type message" required></textarea>
+        <div class="send">
+          <span>
+            <input type="checkbox" id="check" />
+            <label for="check">Save my details</label>
+          </span>
+          <input id="button" type="submit" value="Send Message" />
+        </div>
+      </form>
+    </section>
+  </main>
 
-    <!-- ======================footer======================== -->
-    <footer>
-      <h1>Footer title</h1>
-      <p>Copyright texts</p>
-      <p>Copyright texts</p>
-      <span class="social">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
-      </span>
-    </footer>
-  </body>
+  <!-- ======================footer======================== -->
+  <footer>
+    <h1>Footer title</h1>
+    <p>Copyright texts</p>
+    <p>Copyright texts</p>
+    <span class="social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </span>
+  </footer>
+</body>
+
 </html>
